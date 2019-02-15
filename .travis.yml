@@ -2,6 +2,8 @@ sudo: required
 services:
   - docker
 
+language: node.js
+
 before_install:
   - docker build -t bkituyi/docker-react -f Dockerfile.dev .
 
@@ -11,4 +13,6 @@ script:
 deploy:
   provider: gae
   keyfile: client-secret.json
-  project: docker-react
+  project: continuous-integration-231818
+  on:
+    branch: master
