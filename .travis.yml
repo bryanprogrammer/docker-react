@@ -7,4 +7,3 @@ before_install:
 
 script:
   - docker run bkituyi/docker-react npm run test -- --coverage
-  
