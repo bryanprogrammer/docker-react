@@ -1,4 +1,4 @@
-runtime: node.js
+runtime: custom
 env: flex
 
 manual_scaling:
